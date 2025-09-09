@@ -110,20 +110,17 @@ namespace LabExer03
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
-            StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
-            StudentInformationClass.SetProgram = cbPrograms.Text;
+            StudentInformationClass student = new StudentInformationClass();
 
-            StudentInformationClass.SetGender = cbGender.Text;
-            StudentInformationClass.SetContactNo = ContactNo(txtContactNumber.Text);
+            student.SetFullName = txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddleInitial.Text;
+            student.SetStudentNo = txtStudentNo.Text;
+            student.SetProgram = cbPrograms.Text;
+            student.SetGender = cbGender.Text;
+            student.SetContactNo = txtContactNo.Text;
+            student.SetAge = student.ConvertToAge(txtAge.Text); // 👈 gumagana na
 
-            StudentInformationClass.SetAge = Age(txtAge.Text);
-
-            StudentInformationClass.SetBirthDay = datePickerBirthday.Value.ToString("yyyyMM-dd");
-
-            FrmConfirmation confirmation = new FrmConfirmation();
-            confirmation.ShowDialog();
-
+            MessageBox.Show("Registered: " + student.SetFullName + "\n" +
+                            "Age: " + student.SetAge);
 
 
 
