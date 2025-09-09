@@ -24,8 +24,33 @@ namespace LabExer03
 
         private void OrganizationProfile_Load(object sender, EventArgs e)
         {
+            string[] ListOfProgam = new string[]
+            {
+
+                "BS Information Technology",
+                "BS Computer Science",
+                "BS in Accountancy",
+                "BS in Hospitality Management",
+                "BS in Tourism Management",
+                "BS in Information System"
+            };
+
+
+
+
+
+                for (int i = 0; i < 6; i++)
+            {
+                cboProgram.Items.Add(ListOfProgam[i].ToString);
+            }
 
         }
+
+
+
+
+
+
 
         private void label4_Click(object sender, EventArgs e)
         {
