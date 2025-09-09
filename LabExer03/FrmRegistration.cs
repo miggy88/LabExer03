@@ -12,6 +12,11 @@ namespace LabExer03
 {
     public partial class FrmRegistration: Form
     {
+
+        private string _FullName;
+        private int _Age;
+        private long _ContactNo;
+        private long _StudentNo;
         public FrmRegistration()
         {
             InitializeComponent();
