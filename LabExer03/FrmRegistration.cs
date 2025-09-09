@@ -17,6 +17,9 @@ namespace LabExer03
         private int _Age;
         private long _ContactNo;
         private long _StudentNo;
+
+        public object ListOfPrograms { get; private set; }
+
         public FrmRegistration()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace LabExer03
 
         private void OrganizationProfile_Load(object sender, EventArgs e)
         {
-            string[] ListOfProgam = new string[]
+            string[] ListOfProgram = new string[]
             {
 
                 "BS Information Technology",
@@ -41,7 +44,7 @@ namespace LabExer03
 
                 for (int i = 0; i < 6; i++)
             {
-                cboProgram.Items.Add(ListOfProgam[i].ToString);
+                cbPrograms.Items.Add(ListOfProgram[i].ToString());
             }
 
         }
