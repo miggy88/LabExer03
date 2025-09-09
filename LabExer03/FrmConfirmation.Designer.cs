@@ -138,6 +138,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "FrmConfirmation";
             this.Text = "FrmConfirmation";
+            this.Load += new System.EventHandler(this.FrmConfirmation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
