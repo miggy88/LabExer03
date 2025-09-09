@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LabExer03
 {
-    public partial class OrganizationProfile: Form
+    public partial class FrmRegistration: Form
     {
-        public OrganizationProfile()
+        public FrmRegistration()
         {
             InitializeComponent();
         }
