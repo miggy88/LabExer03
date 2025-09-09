@@ -23,11 +23,17 @@ namespace LabExer03
 
         public FrmRegistration()
         {
+            StudentInformationClass student = new StudentInformationClass();
+
+
 
 
 
             InitializeComponent();
+
         }
+
+
             public long StudentNumber(string studNum)
         {
 
@@ -99,6 +105,28 @@ namespace LabExer03
 
         private void label4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            StudentInformationClass.SetFullName = FullName(txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text);
+            StudentInformationClass.SetStudentNo = StudentNumber(txtStudentNo.Text);
+            StudentInformationClass.SetProgram = cbPrograms.Text;
+
+            StudentInformationClass.SetGender = cbGender.Text;
+            StudentInformationClass.SetContactNo = ContactNo(txtContactNumber.Text);
+
+            StudentInformationClass.SetAge = Age(txtAge.Text);
+
+            StudentInformationClass.SetBirthDay = datePickerBirthday.Value.ToString("yyyyMM-dd");
+
+            FrmConfirmation confirmation = new FrmConfirmation();
+            confirmation.ShowDialog();
+
+
+
+
 
         }
     }

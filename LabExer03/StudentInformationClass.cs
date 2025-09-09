@@ -8,13 +8,16 @@ namespace LabExer03
 {
     class StudentInformationClass
     {
-        public int SetStudentNo = 0;
-        public int SetContactNo = 0;
-        public string SetProgram = "";
-        public string SetGender= "";
-        public string SetBirthday = "";
-        public string SetFullName = "";
+        public static long SetStudentNo { get; set; }
 
+        public static long SetContactNo { get; set; }
+        public static string SetProgram { get; set; }
+        public static string SetBirthDay { get; set; }
+        public static string SetFullName { get; set; }
+
+        public static string SetGender { get; set; }
+
+        public static int SetAge { get; set; }
 
 
 

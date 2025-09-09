@@ -8,17 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace LabExer03
 {
+    
     public partial class FrmConfirmation: Form
     {
+        
+
         public FrmConfirmation()
         {
             InitializeComponent();
         }
 
+      
+        
+
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+          
 
         }
     }
